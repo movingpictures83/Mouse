@@ -10,8 +10,9 @@ Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. (2013): Developmen
 To run this pipeline:
 
 1. Clone this repository into the pipelines/ directory of PluMA.
-2. Run ./getPlugins.sh to automatically download all relevant PluMA plugins.
-3. cd ..
-4. scons perl=0
-5. ./pluma pipelines/Mouse/config.Mouse.txt
+2. Change to the new Mouse/ subdirectory.
+3. Run ./getPlugins.sh to automatically download all relevant PluMA plugins.
+4. Change to the PluMA root directory: 'cd ../../'
+5. Run 'scons perl=0'
+6. Run './pluma pipelines/Mouse/config.Mouse.txt'
 
