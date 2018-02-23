@@ -13,6 +13,7 @@ To run this pipeline:
 2. Change to the new Mouse/ subdirectory.
 3. Run ./getPlugins.sh to automatically download all relevant PluMA plugins.
 4. Change to the PluMA root directory: 'cd ../../'
-5. Run 'scons perl=0'
-6. Run './pluma pipelines/Mouse/config.Mouse.txt'
+5. Install the (currently) latest versions of Mothur (1.39.5, mothur.org), Cytoscape (3.6.0, cytoscape.org) and SCons (3.0.1, scons.org) and be sure they are in your system PATH.
+6. Run 'scons perl=0'
+7. Run './pluma pipelines/Mouse/config.Mouse.txt'
 
