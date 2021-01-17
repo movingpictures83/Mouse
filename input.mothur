@@ -46,7 +46,7 @@ remove.seqs(fasta=pipelines/Mouse/output/stability.trim.contigs.good.unique.filt
 # Step 10: Remove any sequences that are not bacteria
 # TMC NOTE: The newer Mothur will automatically generate output files in the same folder as the databases
 # And it's not controllable through set.dir.  Thus -- you need the reference and taxonomy in your local folder now
-classify.seqs(fasta=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.pick.fasta, count=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.denovo.vsearch.pick.count_table, reference=pipelines/Mouse/trainset9_032012.pds.fasta, taxonomy=pipelines/Mouse/trainset9_032012.pds.tax, cutoff=80)
+classify.seqs(fasta=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.pick.fasta, count=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.denovo.vsearch.pick.count_table, reference=pipelines/Mouse/trainset/trainset9_032012.pds.fasta, taxonomy=pipelines/Mouse/trainset/trainset9_032012.pds.tax, cutoff=80)
 remove.lineage(fasta=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.pick.fasta, count=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.denovo.vsearch.pick.count_table, taxonomy=pipelines/Mouse/output/stability.trim.contigs.good.unique.filter.unique.precluster.pick.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
 #summary.tax(taxonomy=current, count=current)
 # Step 11: Separate abundant and rare sequences (TMC leaving out)

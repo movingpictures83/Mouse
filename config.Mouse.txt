@@ -1,6 +1,7 @@
 Prefix pipelines/Mouse
 Plugin Mothur inputfile input.mothur outputfile none
-Plugin CountTableProcessing inputfile Mouse outputfile abund.csv
+Plugin CountTableProcessing inputfile Mouse outputfile downstream/abund.csv
+Kitty downstream
 Plugin CSVNormalize inputfile abund.csv outputfile abund.norm.csv
 Plugin Spearman inputfile abund.norm.csv outputfile spearman.csv
 Plugin CSVPad inputfile spearman.csv outputfile network.csv
